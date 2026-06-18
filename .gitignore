@@ -1,17 +1,45 @@
+# Environment
 .env
+.env.*
+!.env.example
+
+# Python / Django
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
 .Python
 *.egg-info/
-dist/
-build/
-node_modules/
-.DS_Store
-*.log
-claude.md
-media/
-staticfiles/
 .venv/
-venv/".env" 
+venv/
+db.sqlite3
+db.sqlite3-journal
+staticfiles/
+media/
+celerybeat-schedule
+celerybeat.pid
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / React / Vite
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# Build artifacts
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Misc
+claude.md
